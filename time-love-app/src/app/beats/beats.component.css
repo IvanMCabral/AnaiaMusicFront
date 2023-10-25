@@ -1,0 +1,128 @@
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  h2 {
+    margin-left: 70%;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(128, 128, 128, 1);
+    font-size: 5rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+
+
+  .beats {
+    background-image: url("https://i.postimg.cc/8z1ZGRSs/cv1-01.jpg"); /* Cambiar la URL a la imagen de fondo deseada */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .beats {
+    height: 100vh;
+    position: relative;
+  }
+
+  .song-card {
+    position: absolute;
+    left:30%;
+    bottom:10%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+
+    .song-card:hover {
+      transform: translateY(-10px);
+    }
+
+  .song-card-image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .song-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  .song-card-details {
+    padding: 20px;
+  }
+
+  .song-card-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .song-card-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+  h2 {
+    margin-left: 0%;
+    margin-top: 15%;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(128, 128, 128, 1);
+    font-size: 5rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+
+
+  .contacto {
+    background-image: url("https://i.postimg.cc/8z1ZGRSs/cv1-01.jpg"); /* Cambiar la URL a la imagen de fondo deseada */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .contacto {
+    height: 100vh;
+  }
+
+  .card-header {
+    text-align: center;
+  }
+
+  .card-direccion {
+    position: relative;
+    top: 0%;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+
+  iframe {
+    margin-top: -10%;
+    height: 250px;
+  }
+}

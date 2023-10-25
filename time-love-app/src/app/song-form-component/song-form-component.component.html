@@ -1,0 +1,25 @@
+<h1>Registrar Canción</h1>
+
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" [(ngModel)]="name" required>
+  </div>
+
+  <div>
+    <label for="artist">Artista:</label>
+    <input type="text" name="artist" [(ngModel)]="artist" required>
+  </div>
+
+  <div>
+    <label for="category">Categoría:</label>
+    <input type="text" name="category" [(ngModel)]="category" required>
+  </div>
+
+  <div>
+    <label for="file">Archivo:</label>
+    <input type="file" name="file" (change)="onFileSelected($event)" required>
+  </div>
+
+  <button type="submit">Registrar</button>
+</form>

@@ -1,0 +1,179 @@
+
+
+
+@media (min-width: 1200px) {
+
+
+
+  .container-contacto {
+    position: relative;
+    background-image: url("https://i.postimg.cc/8z1ZGRSs/cv1-01.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .background-black {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+    position: absolute;
+    z-index: 0;
+  }
+
+  .card-direccion {
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+  h2 {
+    position: relative;
+    top: 75px;
+    color: azure;
+    text-shadow: 4px 4px 4px rgb(14 195 195 / 50%);
+    font-family: Gotham;
+    text-align: center;
+    z-index: 1;
+    font-size: 4.8rem;
+    margin-bottom: 5%;
+  }
+
+
+  iframe {
+    width: 450px;
+    margin-top: 20%;
+  }
+
+  contacto {
+    margin-top: 20%;
+  }
+
+
+  .button-contact {
+    z-index: 2;
+    border: none;
+    background: none;
+  }
+
+
+  .button-instagram {
+    position: absolute;
+    left: 125px;
+    top: 100px;
+    width: 100px;
+  }
+
+    .button-instagram img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+
+  .button-spotify {
+    position: absolute;
+    left: 125px;
+    top: 225px;
+    width: 100px;
+  }
+
+    .button-spotify img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+
+  .button-youtube {
+    position: absolute;
+    left: 125px;
+    top: 350px;
+    width: 100px;
+  }
+
+    .button-youtube img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+
+  .button-whatsapp {
+    position: absolute;
+    left: 125px;
+    top: 475px;
+    width: 100px;
+  }
+
+    .button-whatsapp img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+
+
+  .redes-label {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+  }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+  h2 {
+    margin-left: 0%;
+    margin-top: 15%;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(128, 128, 128, 1);
+    font-size: 5rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+
+
+  .contacto {
+    background-image: url("https://i.postimg.cc/8z1ZGRSs/cv1-01.jpg"); /* Cambiar la URL a la imagen de fondo deseada */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .contacto {
+    height: 100vh;
+  }
+
+  .card-header {
+    text-align: center;
+  }
+
+  .card-direccion {
+    position: relative;
+    top: 0%;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Alkatra', cursive;
+  }
+
+
+  iframe {
+    margin-top: -10%;
+    height:250px;
+  }
+ 
+
+ 
+
+
+
+
+}

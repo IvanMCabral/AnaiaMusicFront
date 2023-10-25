@@ -1,0 +1,526 @@
+
+
+
+
+
+.servicio {
+  background-image: url("https://i.postimg.cc/8z1ZGRSs/cv1-01.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+
+/*para que se vea el fondo en imagen*/
+.card-body {
+  background-color: transparent;
+}
+/*para que la imagen de fondo ocupe todo el espacio del card*/
+
+.botonModal {
+  border: 2px solid rgb(22 17 150 / 81%);
+  border-radius: 10px;
+}
+
+.background-black {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+  position: absolute;
+  z-index: 0;
+}
+
+.servicio h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 4px 4px rgb(14 195 195 / 50%);
+  font-family: Gotham;
+  z-index: 1;
+}
+
+
+.body-uno {
+  background-image: url("https://i.postimg.cc/6QHn2RsM/micro2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.body-dos {
+  background-image: url("https://i.postimg.cc/g2zxVJHQ/micro3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.body-tres {
+  background-image: url("https://i.postimg.cc/SRnXztLs/micro1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.servicio .card-header {
+  background-color: #333;
+  color: floralwhite;
+  font-size: 1.8rem;
+  font-family: Gotham;
+  text-align: center;
+  text-shadow: 4px 4px 4px black;
+  width: 100%;
+  height: 150px;
+}
+
+
+.card-button {
+  width: 100px;
+  left: 75%;
+  position: fixed;
+  bottom: 52px;
+  /* right: 64px; */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-scroll-top {
+  width: 100px;
+  left: 75%;
+  position: fixed;
+  bottom: 52px;
+  /* right: 64px; */
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.card-button:hover {
+  background-color: #2646A9;
+  cursor: pointer; /* cursor de la mano para indicar que es un elemento interactivo */
+}
+
+
+.btn-scroll-top:hover {
+  background-color: #333;
+}
+
+
+.corona {
+  height: 110px;
+  width: 100px;
+}
+
+.nota {
+  height: 90px;
+  width: 120px;
+}
+
+.micro {
+  height: 70px;
+  width: 82px;
+}
+
+
+
+@media (min-width: 1600px) {
+
+
+ 
+
+  .card-body {
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenedor ocupa todo el espacio disponible en su elemento padre */
+  }
+
+  .servicio h2 {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 35px;
+    font-size: 3.5rem;
+  }
+
+  .servicio .card-body .list-group-item {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    text-shadow: 2px 1px 1px #220f0b;
+    font-size: 1.5rem;
+    font-family: Gotham;
+    backdrop-filter: blur(0.7px) brightness(90%) saturate(100%);
+  }
+
+  .servicio .card-body .servicio-title {
+    font-size: 1.5rem;
+    font-family: Gotham;
+    }
+
+ 
+  .corona {
+    position:relative;
+    bottom:25px;
+  }
+
+  .nota {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .micro {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .botonModal{
+      display:none;
+  }
+
+
+}
+
+
+@media (max-width: 767px) and (max-height: 843px) {
+
+  .col-md-4 {
+    padding-bottom: 7%;
+    top: 90px;
+  }
+
+  .servicio h2 {
+    position: relative;
+    top: 75px;
+    margin: 0;
+    text-shadow: 4px 4px 4px rgb(14 195 195 / 81%);
+    font-size: 2.2rem;
+    z-index: 1;
+  }
+
+  .body-uno {
+    display: none;
+  }
+
+  .body-dos {
+    display: none;
+  }
+
+  .body-tres {
+    display: none;
+  }
+
+
+  .servicio .card-header {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 125px;
+  }
+
+
+
+  .corona {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .nota {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .micro {
+    position: relative;
+    bottom: 12px;
+  }
+
+
+  .primerModal {
+    position: relative;
+    top: -25px;
+  }
+
+  .segundoModal {
+    position: relative;
+    top: -25px;
+    left: -10px;
+  }
+
+  .tercerModal {
+    position: relative;
+    top: -10px;
+    left: 5px;
+  }
+
+
+}
+
+
+@media (max-width: 767px) and (min-height: 844px) {
+
+
+
+  .col-md-4 {
+    padding-bottom: 10%;
+    top: 150px;
+  }
+
+  .servicio h2 {
+    position: relative;
+    top: 100px;
+    margin: 0;
+    text-shadow: 4px 4px 4px rgb(14 195 195 / 81%);
+    font-size: 3rem;
+    z-index: 1;
+  }
+
+  .body-uno {
+    display: none;
+  }
+
+  .body-dos {
+    display: none;
+  }
+
+  .body-tres {
+    display: none;
+  }
+
+
+  .servicio .card-header {
+    font-size: 1.5rem;
+    height: 150px;
+    padding: 1.75rem 1rem;
+  }
+
+
+  .corona {
+    position: relative;
+    top: -30px;
+  }
+
+  .nota {
+    position: relative;
+    top: -25px;  
+  }
+
+  .micro {
+    position: relative;
+    top: -10px;
+  }
+
+
+  .primerModal {
+    position: relative;
+    top: -25px;
+    
+  }
+
+  .segundoModal {
+    position: relative;
+    top: -25px;
+    left:-10px;
+  }
+
+  .tercerModal {
+    position: relative;
+    top: -10px;
+    left: 5px;
+  }
+
+}
+
+
+@media (max-width: 281px) {
+
+
+  .col-md-4 {
+    padding-bottom: 10%;
+    top: 80px;
+  }
+
+  .servicio h2 {
+    position: relative;
+    top: 55px;
+    margin: 0;
+    text-shadow: 4px 4px 4px rgb(14 195 195 / 81%);
+    font-size: 2.2rem;
+    z-index: 1;
+  }
+
+  .body-uno {
+    display: none;
+  }
+
+  .body-dos {
+    display: none;
+  }
+
+  .body-tres {
+    display: none;
+  }
+
+
+  .servicio .card-header {
+    font-size: 1.3rem;
+    height: 125px;
+    padding:  0.5rem;
+  }
+
+
+  .corona {
+    position: relative;
+    top: -30px;
+  }
+
+  .nota {
+    position: relative;
+    top: -25px;
+  }
+
+  .micro {
+    position: relative;
+    top: -10px;
+  }
+
+
+  .primerModal {
+    position: relative;
+    top: -25px;
+  }
+
+  .segundoModal {
+    position: relative;
+    top: -25px;
+    left: -10px;
+  }
+
+  .tercerModal {
+    position: relative;
+    top: -10px;
+    left: 5px;
+  }
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-body {
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenedor ocupa todo el espacio disponible en su elemento padre */
+  }
+
+  .servicio .card-header {
+    font-size: 1.2rem;
+    height: 125px;
+  }
+
+  .servicio h2 {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  .servicio .card-body .list-group-item {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    text-shadow: 3px 2px 1px #220f0b;
+    font-size: 1.2rem;
+    font-family: Gotham;
+    backdrop-filter: blur(0.7px) brightness(90%) saturate(100%);
+  }
+
+  .servicio .card-body .servicio-title {
+    font-size: 1.3rem;
+    font-family: Gotham;
+  }
+
+
+  .corona {
+    position: relative;
+    bottom: 45px;
+  }
+
+  .nota {
+    position: relative;
+    bottom: 45px;
+  }
+
+  .micro {
+    position: relative;
+    bottom: 25px;
+  }
+
+  .botonModal {
+    display: none;
+  }
+  
+}
+
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+
+
+    .card-body {
+      height: 450px;
+      flex-direction: column;
+      justify-content: space-between; /* Asegura que el contenedor ocupa todo el espacio disponible en su elemento padre */
+    }
+
+    .servicio h2 {
+      position: relative;
+      margin-bottom: 50px;
+      padding-top: 5%;
+      margin: 0;
+      font-size: 3.5rem;
+    }
+
+    .servicio .card-body .list-group-item {
+      color: white;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      text-shadow: 2px 1px 1px #220f0b;
+      font-size: 1.5rem;
+      font-family: Gotham;
+      backdrop-filter: blur(0.7px) brightness(90%) saturate(100%);
+    }
+
+    .servicio .card-body .servicio-title {
+      font-size: 1.5rem;
+      font-family: Gotham;
+    }
+
+
+    .corona {
+      position: relative;
+      bottom: 25px;
+    }
+
+    .nota {
+      position: relative;
+      bottom: 20px;
+    }
+
+    .micro {
+      position: relative;
+      bottom: 10px;
+    }
+
+    .botonModal {
+      display: none;
+    }
+  }
+

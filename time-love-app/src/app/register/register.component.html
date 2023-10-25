@@ -1,0 +1,35 @@
+<section class="register">
+  <div class="container-register">
+    <h2>Registro de usuario</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Complete los siguientes datos</div>
+            <div class="card-body">
+              <form (submit)="onSubmit()">
+                <div class="form-group">
+                  <label for="firstName">Nombre:</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" [(ngModel)]="user.firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Apellido:</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" [(ngModel)]="user.lastName" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" class="form-control" [(ngModel)]="user.email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password" class="form-control" [(ngModel)]="user.password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

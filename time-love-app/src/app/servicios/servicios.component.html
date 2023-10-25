@@ -1,0 +1,103 @@
+<section class="servicio">
+  <button *ngIf="showScrollButton" class="card-button" onclick="window.scrollBy({top: window.innerHeight/1, left: 0, behavior: 'smooth'});">🢃</button>
+  <button *ngIf="showScrollTopBtn" id="scroll-to-top" class="btn-scroll-top" title="Ir al inicio" (click)="scrollToTop()">
+    🢁
+  </button>
+
+
+
+  <div class="container-servicio">
+    <div class="background-black"></div>
+    <h2>Servicios!</h2>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <p>Servicio Completo</p>
+                <img class="corona" src="../assets/corona.png" />
+                <button class="botonModal primerModal" (click)="abrirModal()">Ver Detalle</button>
+          </div>
+            <div class="card-body body-uno ">
+              <div class="row">
+                <div class="lista">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item servicio-title">Grabación, mezcla y masterización</li>
+                    <li class="list-group-item servicio-title">Turno 2 horas:</li>
+                    <li class="list-group-item">Valor $5000</li>
+                    <li class="list-group-item servicio-title">Turno 1 hora:</li>
+                    <li class="list-group-item">Valor $3000</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-header">
+              <p> Producción de Beats</p>
+                <img class="nota" src="../assets/corchea.png" />
+                <button class="botonModal segundoModal" (click)="abrirModal2()">Ver Detalle</button>
+          </div>
+            <div class="card-body body-dos">
+              <div class="row">
+                <div class="lista">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item servicio-title">Reggaeton</li>
+                    <li class="list-group-item servicio-title">Dembow</li>
+                    <li class="list-group-item servicio-title">Dancehall</li>
+                    <li class="list-group-item servicio-title">Trap</li>
+                    <li class="list-group-item servicio-title">Rap</li>
+                    <li class="list-group-item servicio-title">Otros</li>
+                    <li class="list-group-item">Valor $5000</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <p>Servicios por separado</p>
+              <img class="micro" src="../assets/micro-sin-borde.png" />
+              <button class="botonModal tercerModal" (click)="abrirModal3()">Ver Detalle</button>
+            </div>
+            <div class="card-body body-tres">
+              <div class="row">
+                <div class="lista">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item servicio-title">Grabación de voces</li>
+                    <li class="list-group-item "> Valor: $2000 </li>
+                    <li class="list-group-item servicio-title">Mezcla</li>
+                    <li class="list-group-item ">Valor: $5000</li>
+                    <li class="list-group-item servicio-title">Masterización</li>
+                    <li class="list-group-item"> Valor: $3000</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <app-modal *ngIf="showModal" [showModal]="showModal" [modalType]="tipoDeModal" (closeModal)="resetModal()"></app-modal>
+</section>
+
+

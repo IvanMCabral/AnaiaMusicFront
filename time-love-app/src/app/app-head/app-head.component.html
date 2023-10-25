@@ -1,0 +1,51 @@
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anaia Entertainment Producciones</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app-head.component.css">
+
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark" [class.scrolled]="isScrolled">
+  <div class="container">
+    <a class="navbar-brand navbar-title scrolled" href="#">Anaia Entertainment</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto " style="font-size: 1.2rem;">
+        <li class="nav-item">
+          <a class="nav-link" id="inicio-link" routerLink="">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fotos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contacto-link" style="cursor: pointer;">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Música</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="servicios-link" style="cursor: pointer;">Servicios</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+

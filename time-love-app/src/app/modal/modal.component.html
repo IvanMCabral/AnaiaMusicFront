@@ -1,0 +1,82 @@
+<!-- Primer modal -->
+<div class="modal-wrapper" [ngClass]="{'show': showModal}" *ngIf="modalType === 'modal1'">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Servicio Completo</h4>
+      <button type="button" class="close" (click)="close()">&times;</button>
+
+    </div>
+    <div class="modal-body">
+      <div class="card-body body-uno ">
+        <div class="row">
+          <div class="lista">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item servicio-title">Grabación, mezcla y masterización</li>
+              <li class="list-group-item servicio-title">Turno 2 horas:</li>
+              <li class="list-group-item">Valor $5000</li>
+              <li class="list-group-item servicio-title">Turno 1 hora:</li>
+              <li class="list-group-item">Valor $3000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Segundo modal -->
+<div class="modal-wrapper" [ngClass]="{'show': showModal}" *ngIf="modalType === 'modal2'">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Producción de Beats</h4>
+      <button type="button" class="close" (click)="close()">&times;</button>
+
+    </div>
+    <div class="modal-body">
+      <div class="card-body body-dos">
+        <div class="row">
+          <div class="lista">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item servicio-title">Reggaeton</li>
+              <li class="list-group-item servicio-title">Dembow</li>
+              <li class="list-group-item servicio-title">Dancehall</li>
+              <li class="list-group-item servicio-title">Trap</li>
+              <li class="list-group-item servicio-title">Rap</li>
+              <li class="list-group-item servicio-title">Otros</li>
+              <li class="list-group-item">Valor $5000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Tercer modal -->
+<div class="modal-wrapper" [ngClass]="{'show': showModal}" *ngIf="modalType === 'modal3'">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Servicios por separado</h4>
+      <button type="button" class="close" (click)="close()">&times;</button>
+
+    </div>
+    <div class="modal-body">
+      <div class="card-body body-tres">
+        <div class="row">
+          <div class="lista">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item servicio-title">Grabación de voces</li>
+              <li class="list-group-item "> Valor: $2000 </li>
+              <li class="list-group-item servicio-title">Mezcla</li>
+              <li class="list-group-item ">Valor: $5000</li>
+              <li class="list-group-item servicio-title">Masterización</li>
+              <li class="list-group-item"> Valor: $3000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

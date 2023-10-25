@@ -1,0 +1,73 @@
+<section class="beats-venta">
+  <div class="container-venta">
+    <div class="background-black"></div>
+    <h2>Beats en venta!</h2>
+
+    <button  class="button-see-table" (click)="toggleTable()">
+      <img id="my-button" class="pulse" src="assets/nota-corchea.png">
+    </button>
+
+    <div class="container-tabla">
+
+      <table class="tableSong" *ngIf="mostrarTabla">
+        <thead>
+          <tr>
+            <th *ngFor="let column of columnsToDisplay">{{column}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let song of filteredMusicList | async">
+            <td>{{ song.name }}</td>
+
+            <td>{{ song.category }}</td>
+            <td>
+              <button  class="button-play-table" (click)="play( song.id )" [class.active]="activeSongId === song.id">
+                <img src="assets/blue-button.png">
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <select class="category" [style.visibility]="mostrarTabla ? 'visible' : 'hidden'" #categorySelect (change)="filterByCategory(categorySelect.value)">
+      <option value="">All Genres</option>
+      <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+    </select>
+
+
+
+    <div class="song-card">
+      <img *ngIf="!isPlaying" class="logo" src="assets/ANAIA__1_ICON.png" />
+      <h3 *ngIf="!isPlaying">ALEX SNYDER X EDU JABLONSKY</h3>
+      <div class="song-card-image">
+        <!-- Imagen de la canción -->
+      </div>
+      <div class="song-card-details">
+        <h1 class="song-card-title">{{ songTitle }}</h1>
+        <input id="timeline-slider" class="timeline" type="range" min="0" max="{{duration}}"
+               [(ngModel)]="currentTime" *ngIf="showButton"
+               (input)="seekToTime(currentTime)"
+               #timelineSlider>
+
+        <div style="position: relative;">
+          <canvas #canvas id="canvas"></canvas>
+        </div>
+
+        <button class="button-music-play" (click)=" play(idCancionTabla); " [class.active]="buttonActive" *ngIf="showButton">
+          <img *ngIf="!isPlaying" src="assets/play-button.png" alt="play">
+          <img *ngIf="isPlaying" src="assets/pause-button.png" alt="pause">
+        </button>
+
+        <button class="button-music-prev" (click)="playPrevMusic(musicList)" *ngIf="showButton" [disabled]="!isPrevEnabled ">
+          <img src="assets/prev-button.png" alt="prev">
+        </button>
+
+        <button class="button-music-next" (click)="playNextMusic(musicList)" [disabled]="!isNextEnabled || isTransitioning || !showButton ">
+          <img src="assets/next-button.png" alt="next">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div (window:resize)="onResize($event)"></div>
+</section>

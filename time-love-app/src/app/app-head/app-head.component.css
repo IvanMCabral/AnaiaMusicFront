@@ -1,0 +1,73 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar { 
+  background-color: transparent;
+}
+
+
+
+
+.navbar.scrolled {
+  background-color: #333;
+}
+
+
+.navbar-dark .navbar-toggler {
+  background-color: #333;
+}
+
+
+@media (min-width: 1200px) {
+  .navbar a {
+    color: white;
+  }
+ 
+}
+
+@media (max-width: 767px) {
+  .navbar-brand.navbar-title {
+    color: black;
+  }
+
+  .navbar .nav-link {
+    color: white;
+  }
+
+  .navbar.scrolled .navbar-title {
+    color: white;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #navbarSupportedContent {
+    background-color: #333;
+    width: 135px;
+    text-align: center;
+    right: 15px;
+    top: 101%;
+    position: absolute;
+    border-radius: 10px;
+  }
+}
+
+
+
+@media (max-width: 281px) {
+
+  .navbar-brand {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+}
+  
+
